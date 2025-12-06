@@ -1,0 +1,402 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: Sans-Serif;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    background: black;
+    top: 0;
+    z-index: 100;
+}
+
+.nav h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.nav-bar a:hover {
+    background: white;
+    color: #ff5722;
+}
+.shop{
+    background:black;
+    color:white;
+    width:130px;
+    height:50px;
+    margin-left:90px;
+    padding-top:10px;
+
+    border-radius:10px;
+}
+
+/* SIDEBAR */
+.side {
+    position: fixed;
+    left: -70%;
+    top: 0;
+    width: 60%;
+    max-width: 300px;
+    height: 100%;
+    background: black;
+    padding-top: 20px;
+    color: white;
+    transition: 0.5s;
+    z-index: 100;
+}
+.side p {
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 59px;
+}
+
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 80%;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px 30px 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.h1dress {
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+/* BUTTON */
+p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.buybtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+/* PRODUCTS GRID */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    margin-top: 80px;
+}
+.products1 {
+    position: relative;
+    flex-basis: 25%;
+    padding: 20px;
+    margin-top: 30px;
+}
+.products2 {
+    position: relative;
+    flex-basis: 25%;
+    padding: 20px;
+    margin-top: 30px;
+}
+.products3 {
+    position: relative;
+    flex-basis: 25%;
+    padding: 20px;
+    margin-top: 30px;
+}
+.products4 {
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* SERVICES */
+.service,
+.mainservice {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service2,
+.service3,
+.service4 {
+    background: #F2F4F7;
+    padding: 25px;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 40px;
+    margin: 5px;
+}
+
+.container1 {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.next {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    width: 180px;
+    padding: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px auto;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.next:hover {
+    background: #333;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+    .next {
+        width: 140px;
+        font-size: 18px;
+        padding: 14px 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.next:hover {
+    background: #333;
+}
+
+/* ABOUT BEAUTIFUL BOX */
+.about-beautiful {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 50px 30px;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideFade 1.2s ease forwards;
+}
+
+.about-beautiful h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.about-beautiful p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+.about-beautiful h3 {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.about-beautiful a {
+    color: #ff2b6e;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.about-beautiful a:hover {
+    text-decoration: underline;
+}
+
+/* ANIMATION */
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logout {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.logout:hover {
+    background-color: black;
+    color: white;
+}
+
+.logout1 {
+    display: none;
+}
+
+/* FOOTER */
+
+
+/* MOBILE */
+@media(max-width:600px) {
+
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        margin-left:70px;
+    }
+
+    .header, .service, .mainservice {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hide normal logout on mobile */
+    .logout {
+        display: none;
+    }
+
+    /* Show logout1 on mobile */
+    .logout1 {
+        display: block;
+    
+color: black;
+    background-color: black;
+    color:white;
+
+    
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width:100px;
+    height:30px;
+
+    margin-left:240px;
+    margin-top:10px;
+    
+    padding:20px;
+    padding-bottom:30px;
+    border-radius:10px;
+    
+cursor: pointer;
+    transition: 0.3s ease;
+
+
+        /* optional */
+    }
+    
+
+logout1:hover {
+    background-color: black;
+    color: white;
+}
+
+    
+    
+}
